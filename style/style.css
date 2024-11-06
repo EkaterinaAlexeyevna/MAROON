@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --gray:#969696;
+    --light-gray:#D0D0D0;
+    --text:#122947;
+}
+body{
+    background-color: #F8F8F6;
+    font-family: "M PLUS 1p", serif;
+    
+}
+p,h1,h2,h3{
+    margin: 0;
+}
+
+/* шапка---------------- */
+.header {
+    padding-top:40px ;
+    /* временные стили */
+    /* background-color: aqua; */
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    /* временные стили */
+    /* background-color: green; */
+}
+.logo {
+    max-height: 21px;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap:50px ;
+}
+.menu__items {
+    display: flex;
+    gap: 35px;
+}
+.menu__item {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 400;
+    font-size: 16px;
+}
+.menu__icons {
+    display: flex;
+    gap: 30px;
+}
+.menu__icon {
+    cursor: pointer;
+}
+/* главная часть-------------------------------- */
+.hero{
+    
+    background-image: url(/img/hero_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+}
+/* карточка категории товаров */
+.card-type-tovar {
+    max-width: 330px;
+    width: 100%;
+}
+.card-type-tovar__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+.card-type-tovar__p {
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--text);
+    
+}
+.card-type-tovar__link {
+}
+/* -------------------------- */
+.hero__container{
+    max-width: 1030px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+/* контент hero блока--------------- */
+.hero__content {
+    text-align: center; 
+    max-height: 190px;
+    margin-top: 60px;
+}
+.hero__title {
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
+.hero__text{
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.button {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    border: 1px solid #B3BAC1;
+    padding:5px 27px 8px 27px ;
+}
+/* стилизация второй секции */
+.swiper-section__container{
+    margin-top: 140px;
+    height: 312px;
+}
+.swiper-section__contant{
+    margin-top: 56px;
+}
+.swiper-section__title{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;   
+}
+.swiper-section__desc{
+    font-size: 18px;
+    line-height: 145%;
+    max-width: 214px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+/* карусель */
+:root {
+    --swiper-navigation-size: 0;
+}
+    html,
+    body {
+      position: static;
+      height: 100%;
+    }
+
+    body {
+    }
+    .swioer-wrapper{
+        height: 312px;
+    }
+    .swiper {
+      
+      overflow-x: hidden;
+    }
+    .swiper {
+      width: 1000px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    p{
+        margin: 0;
+    }
+    .tovar{
+        background-image: url(/img/крем_1.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        max-width: 230px;
+        width: 100%;
+        min-height: 312px;
+        height: 100%;
+        display: flex;
+        
+    }
+    .tovar_Rest{
+        background-image: url(/img/крем_2\ 1.png);
+        
+    }
+    .tovar_Rose{
+        background-image: url(/img/крем_3\ 1.png);
+    }
+    .tovar_Milk{
+        background-image: url(/img/крем_4\ 1.png);
+    }
+    .tovar__content{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        height: 80px;
+        margin-top: auto;
+    }
+    .tovar__title{
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+    }
+    .tovar__desc{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #9A9DA0;
+    }
+    .tovar__link{
+        text-decoration: none;
+        font-size: 13px;
+        color: var(--text);
+    }
+    .tovar__link::after{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 70px;
+        background-color: #122947;
+        margin:7px auto auto auto;
+
+    }
+    
+    .swiper-button-next:after,.swiper-button-prev:after {
+          display: none;
+      }
+      .swiper-button-next,.swiper-button-prev{
+          right: inherit;
+          left: inherit;
+          position: static;
+          width: 27px !important;
+          height: 14px !important;
+          top: 0;
+        }
+        .swiper__strelki{
+            display: flex;
+            gap: 32px;
+            width: 84px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-top: 25px;
+            padding-right: 100px;
+            
+        }
+        .swiper-button-prev{
+            margin-top: 0;
+
+        }
+        .swiper-wrapper {
+            position: static;
+            height:312px ;
+            display: flex;
+}
+/* секция банера--------------------- */
+.banner {
+    background-image: url(/img/банер\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    
+    
+}
+.banner__container{
+    align-items: center;
+    margin-top: 177px;
+    height: 400px;
+}
+.banner__content {
+    max-width: 280px;
+    margin-right: 284px;
+    margin-left: auto;
+}
+.banner__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 125%;
+}
+.banner__desc {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.button {
+}
+/* ----------------------- */
